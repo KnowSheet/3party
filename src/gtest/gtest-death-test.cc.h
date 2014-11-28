@@ -31,8 +31,8 @@
 //
 // This file implements death tests.
 
-#include "gtest/gtest-death-test.h"
-#include "gtest/internal/gtest-port.h"
+// #include "gtest/gtest-death-test.h"  -- header commented out by dkorolev.
+// #include "gtest/internal/gtest-port.h"  -- header commented out by dkorolev.
 
 #if GTEST_HAS_DEATH_TEST
 
@@ -63,7 +63,7 @@
 // prevent a user from accidentally including gtest-internal-inl.h in
 // his code.
 #define GTEST_IMPLEMENTATION_ 1
-#include "src/gtest-internal-inl.h"
+// #include "src/gtest-internal-inl.h"  -- header commented out by dkorolev.
 #undef GTEST_IMPLEMENTATION_
 
 namespace testing {
