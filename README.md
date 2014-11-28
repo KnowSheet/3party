@@ -1,4 +1,3 @@
-3Party
-======
+# 3Party
 
 Third-party modules.
