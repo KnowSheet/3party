@@ -1,4 +1,4 @@
-// A tree-minutes intro to gtest.
+// A three-minutes intro to gtest.
 //
 // 1) ASSERT_* interrupts the TEST() { .. } if failing,
 //    EXPECT_* considers the TEST() failed, but continues to execute it.
