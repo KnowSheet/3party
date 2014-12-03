@@ -3,6 +3,6 @@
 #ifndef THIRDPARTY_GTEST_H
 #define THIRDPARTY_GTEST_H
 
-#include "gtest-all.cc.h"
+#include "src/gtest-all.cc"
 
 #endif  // THIRDPARTY_GTEST_H
