@@ -29,7 +29,7 @@
 //
 // Author: wan@google.com (Zhanyong Wan)
 
-// #include "gtest/internal/gtest-port.h"  -- header commented out by dkorolev.
+#include "gtest/internal/gtest-port.h"
 
 #include <limits.h>
 #include <stdlib.h>

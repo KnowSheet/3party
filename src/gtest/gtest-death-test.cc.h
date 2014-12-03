@@ -31,8 +31,8 @@
 //
 // This file implements death tests.
 
-// #include "gtest/gtest-death-test.h"  -- header commented out by dkorolev.
-// #include "gtest/internal/gtest-port.h"  -- header commented out by dkorolev.
+#include "gtest/gtest-death-test.h"
+#include "gtest/internal/gtest-port.h"
 
 #if GTEST_HAS_DEATH_TEST
 
