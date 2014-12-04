@@ -24,8 +24,8 @@
 // 8) Prefix a test name with "DISABLED_" to exclude it from being run.
 //    Use sparingly and try to keep master clean from disabled tests.
 
-#include "../../src/gtest/gtest.h"
-#include "../../src/gtest/gtest-main.h"
+#include "../../3party/gtest/gtest.h"
+#include "../../3party/gtest/gtest-main.h"
 
 #include <vector>
 #include <queue>
