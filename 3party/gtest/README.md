@@ -2,6 +2,8 @@
 
 A header-only port of http://code.google.com/p/googletest/
 
+See [examples/gtest/demo.cc](https://github.com/KnowSheet/3party/blob/master/examples/gtest/demo.cc) for usage.
+
 Based on version 1.7.0, http://googletest.googlecode.com/files/gtest-1.7.0.zip
 
 Original ```LICENSE```, ```COPYING```, ```CONTRIBUTORS``` and ```README``` files kept.
