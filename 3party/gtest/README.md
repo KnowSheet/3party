@@ -11,6 +11,7 @@ Original ```LICENSE```, ```COPYING```, ```CONTRIBUTORS``` and ```README``` files
 Files taken are ```src/``` and ```include/```. Instructions:
 
 ```
+wget https://googletest.googlecode.com/files/gtest-1.7.0.zip
 unzip gtest-1.7.0.zip
 cp -rv gtest-1.7.0/include gtest-1.7.0/src .
 find include/gtest/internal/ -maxdepth 1 -type f | xargs sed -i "s/#include \"gtest\/internal\//#include \"/g"

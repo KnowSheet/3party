@@ -6,17 +6,18 @@
 // 2) ASSERT-s and EXPECT-s can be used as output streams. No newline needed.
 //    EXPECT_EQ(4, 2 * 2) << "Something is wrong with multiplication."
 //
-// 3) ASSERT-s and EXPECT-s can use {EQ,NE,LT,GT,LE,NE,TRUE} after the underscore.
+// 3) ASSERT-s and EXPECT-s can use {EQ,NE,LT,GT,LE,NE,TRUE,FALSE} after the underscore.
 //    This results in more meaningful messages.
 //
-// 4) For {ASSERT,EXPECT}_{EQ,NE}, put the expected value as the first parameter.
+// 4) For {ASSERT,EXPECT}_{EQ,NE,LT,GT,LE,GE}, put the expected value as the first parameter.
 //    For cleaner error messages.
 //
 // 5) ASSERT_THROW(statement, exception_type) ensures the exception is thrown.
 //
-// 6) ASSERT_DEATH(function(), "Expected regex for the last line of standard error.")
-//    can be used to ensure certain call fails. The convention is to use
-//    the "DeathTest" suffix for those tests and to not mix functional tests with death tests.
+// 6) ASSERT_DEATH(function(), "Expected regex for the contents of standard error.")
+//    can be used to ensure certain call fails. The convention is to use the "DeathTest" suffix
+//    for those tests and to not mix functional tests with death tests.
+//    Note that the 2nd parameter is a regex, which means, among other things, escaping like "\\." and "\\:".
 //
 // 7) gtest supports templated tests, where objects of various tests are passed to the same test method.
 //    Each type results in the whole new statically compiled test.
