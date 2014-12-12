@@ -82,14 +82,14 @@ TYPED_TEST_CASE(GTestTemplatedTest, ContainersTypeList);
 TYPED_TEST(GTestTemplatedTest, TemplatedContainersTest) {
   TypeParam container;
   EXPECT_TRUE(container.empty());
-  EXPECT_EQ(0, container.size());
+  EXPECT_EQ(0u, container.size());
   container.push_back(42);
   EXPECT_FALSE(container.empty());
-  EXPECT_EQ(1, container.size());
+  EXPECT_EQ(1u, container.size());
   EXPECT_EQ(42, container.back());
   container.pop_back();
   EXPECT_TRUE(container.empty());
-  EXPECT_EQ(0, container.size());
+  EXPECT_EQ(0u, container.size());
 }
 
 // An example of a failing test. It is marked as DISABLED in order to not run.

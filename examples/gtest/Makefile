@@ -1,7 +1,7 @@
 .PHONY: test all indent clean
 
 CPP=g++
-CPPFLAGS=-std=c++11 -Wall
+CPPFLAGS=-std=c++11 -Wall -W
 LDFLAGS=-pthread
 
 PWD=$(shell pwd)
