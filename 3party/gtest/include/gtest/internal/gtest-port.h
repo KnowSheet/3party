@@ -1386,6 +1386,7 @@ class MutexBase {
 // particular, the owner_ field (a pthread_t) is not explicitly initialized.
 // This allows initialization to work whether pthread_t is a scalar or struct.
 // The flag -Wmissing-field-initializers must not be specified for this to work.
+// D.K.: Life is better without this warning.
 # define GTEST_DEFINE_STATIC_MUTEX_(mutex) \
     ::testing::internal::MutexBase mutex = { PTHREAD_MUTEX_INITIALIZER, false, pthread_t() }
 
